@@ -26,8 +26,8 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
+        <div class="row generate-report-section">
+            <div class="col-md-6">
                 <input id="uploadFile" placeholder="Choose File" disabled="disabled"/>
                 <div class="fileUpload btn btn-primary">
                     <span>Upload</span>
@@ -36,17 +36,20 @@
                 <button type="button" class="btn btn-danger" onclick="clearUpload()">Clear Upload</button>
             </div>
            
-            <div class="col-md-5 report-col">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Select Report type
+            <div class="col-md-6 col-xs-12" id="generate_report_id">
+                <button class="btn btn-default dropdown-toggle report-option" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" disabled>Select Report type
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu dropdown-ul" aria-labelledby="dropdownMenu1">
                     <li><a href="#">Bar Chart</a></li>
                     <li><a href="#">Pie Chart</a></li>
                     <li><a href="#">Visual Report</a></li>
                 </ul>
-                <button type="button" class="generate-btn btn btn-primary">Generate Report</button>
+                <button id="gen_report_btn-id" type="button" class="btn btn-primary" disabled onclick="generateReport()">Generate Report</button>
             </div>
         </div>
+        <div id="bar_chart" class="hide-charts chart-container"></div>
+        <div id="pie_chart" class="hide-charts chart-container"></div>
+        <div id="visual_report" class="hide-charts chart-container"></div>
     </div>
 
     <!-- build:js scripts/vendor.js -->
