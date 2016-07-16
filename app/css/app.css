@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Dosis Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Dosis Regular"), local("Dosis-Regular"), url("fonts/Dosis-Regular.tff") format("tff"); }
+@font-face {
+  font-family: 'Dosis Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Dosis Bold"), local("Dosis-Bold"), url("fonts/Dosis-Bold.tff") format("tff"); }
+body {
+  font-family: 'Dosis Regular' !important; }
+
+input {
+  padding: 5px;
+  border-radius: 4px; }
+
+.dropdown-ul {
+  margin: 0 10px 0 10px; }
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 100px; }
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.report-col {
+  padding: 9px 15px 0 15px; }
+
+.generate-btn {
+  margin-left: 9px; }
